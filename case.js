@@ -22,10 +22,12 @@ function updatecaseTotalPrice(totalCase) {
 document.getElementById('btn-case-pluse').addEventListener('click', function () {
     const totalCase = updateCase(true);
     updatecaseTotalPrice(totalCase);
+    calculateSubTotal();
 })
 document.getElementById('btn-case-minus').addEventListener('click', function () {
     const totalCase = updateCase(false);
     updatecaseTotalPrice(totalCase);
+    calculateSubTotal();
 
 
 })
